@@ -93,7 +93,6 @@ TaskManagerOS utilizes a secure, project-centric onboarding flow governed by Rol
 ### Roles & Permissions
 - **Admin**: Full access to create/edit tasks, manage team members, and view all project analytics.
 - **Member**: Access to view and update task status. Can view personalized dashboard metrics.
-- **Observer**: Read-only access to the task board and project overview.
 
 ---
 

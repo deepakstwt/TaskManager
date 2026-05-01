@@ -65,7 +65,6 @@ TaskManagerOS utilizes a secure, project-centric onboarding flow governed by Rol
 ### **2. Role Definitions**
 - **Admin**: Full control over tasks (CRUD), project settings, and team management.
 - **Member**: Access to view tasks and update their status (Execution level).
-- **Observer**: Read-only access to the dashboard and task board.
 
 ---
 
