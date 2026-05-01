@@ -93,7 +93,7 @@ function RegisterPageContent() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fafafa] font-sans text-gray-900 flex flex-col justify-center py-12 sm:px-6 lg:px-8 relative selection:bg-gray-200">
+    <div className="min-h-screen bg-[#fafafa] font-sans text-gray-900 flex flex-col justify-center py-12 sm:px-6 lg:px-8 relative selection:bg-emerald-100">
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(15px); }
@@ -111,7 +111,7 @@ function RegisterPageContent() {
       
       {!paramsLoaded || checkingSession ? (
         <div className="relative z-10 flex flex-col items-center justify-center space-y-4 font-sans animate-in fade-in duration-500">
-          <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center shadow-md">
+          <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center shadow-md">
              <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
           </div>
           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
@@ -122,7 +122,7 @@ function RegisterPageContent() {
         <>
           <div className="relative z-10 sm:mx-auto sm:w-full sm:max-w-md opacity-0 animate-fade-up">
             <div className="flex justify-center mb-6">
-              <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center shadow-md">
+              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center shadow-md">
                 <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
               </div>
             </div>
@@ -210,7 +210,7 @@ function RegisterPageContent() {
                       value={inviteCode}
                       disabled={isCodeLocked}
                       onChange={(e) => setInviteCode(e.target.value.toUpperCase())}
-                      className={`appearance-none block w-full px-4 py-3 border border-gray-200 rounded-xl bg-gray-50/50 focus:bg-white text-gray-900 font-medium placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all shadow-sm tracking-widest selection:bg-black selection:text-white ${isCodeLocked ? 'opacity-60 cursor-not-allowed bg-gray-100' : ''}`}
+                      className={`appearance-none block w-full px-4 py-3 border border-gray-200 rounded-xl bg-gray-50/50 focus:bg-white text-gray-900 font-medium placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all shadow-sm tracking-widest selection:bg-emerald-600 selection:text-white ${isCodeLocked ? 'opacity-60 cursor-not-allowed bg-gray-100' : ''}`}
                       placeholder="TASKMANAGER-XXXX"
                     />
                   </div>
@@ -219,17 +219,17 @@ function RegisterPageContent() {
                   </p>
                   {inviteCode && (
                     <div className="animate-in fade-in slide-in-from-top-2 duration-500 mt-4">
-                      <div className="p-4 rounded-xl border border-indigo-600 bg-indigo-50/30 ring-1 ring-indigo-600 shadow-sm flex items-center justify-between">
+                      <div className="p-4 rounded-xl border border-emerald-600 bg-emerald-50/30 ring-1 ring-emerald-600 shadow-sm flex items-center justify-between">
                          <div>
-                            <p className="text-[9px] font-black text-indigo-600 uppercase tracking-widest">Account Role</p>
-                            <p className="text-sm font-bold text-indigo-900">Project Member</p>
+                            <p className="text-[9px] font-black text-emerald-600 uppercase tracking-widest">Account Role</p>
+                            <p className="text-sm font-bold text-emerald-900">Project Member</p>
                          </div>
-                         <div className="w-5 h-5 bg-indigo-600 rounded-full text-white flex items-center justify-center">
+                         <div className="w-5 h-5 bg-emerald-600 rounded-full text-white flex items-center justify-center">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                          </div>
                       </div>
                       <p className="mt-3 text-[10px] text-gray-500 font-medium italic flex items-center gap-1.5 px-1 opacity-80">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-indigo-500"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-500"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
                         You are joining as a member. Roles can be adjusted later by the admin.
                       </p>
                     </div>
@@ -240,7 +240,7 @@ function RegisterPageContent() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full flex justify-center items-center py-3.5 px-4 border border-transparent rounded-xl shadow-md text-sm font-bold text-white bg-black hover:bg-gray-800 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-all active:scale-[0.98] disabled:opacity-50"
+                    className="w-full flex justify-center items-center py-3.5 px-4 border border-transparent rounded-xl shadow-md text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition-all active:scale-[0.98] disabled:opacity-50"
                   >
                     {loading ? (
                       <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>

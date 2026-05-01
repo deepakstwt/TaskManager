@@ -63,7 +63,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#fafafa] font-sans text-gray-900 flex flex-col justify-center py-12 sm:px-6 lg:px-8 relative selection:bg-gray-200">
+    <div className="min-h-screen bg-[#fafafa] font-sans text-gray-900 flex flex-col justify-center py-12 sm:px-6 lg:px-8 relative selection:bg-emerald-100">
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(15px); }
@@ -81,7 +81,7 @@ export default function LoginPage() {
       
       <div className="relative z-10 sm:mx-auto sm:w-full sm:max-w-md opacity-0 animate-fade-up">
         <div className="flex justify-center mb-6">
-          <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center shadow-md">
+          <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center shadow-md">
             <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
           </div>
         </div>
@@ -147,7 +147,7 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full flex justify-center items-center py-3.5 px-4 border border-transparent rounded-xl shadow-md text-sm font-bold text-white bg-black hover:bg-gray-800 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-all active:scale-[0.98] disabled:opacity-50"
+                className="w-full flex justify-center items-center py-3.5 px-4 border border-transparent rounded-xl shadow-md text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition-all active:scale-[0.98] disabled:opacity-50"
               >
                 {loading ? (
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
